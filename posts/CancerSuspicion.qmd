@@ -1,0 +1,291 @@
+---
+title: |
+  癌疑いに関わる経緯\
+  \
+  Chatのやりとりから
+author: "成朗"
+date: last-modified
+date-format: "MMMM DD, YYYY, HH:MM ZZ"
+execute:
+  echo: false
+  freeze: auto  # re-render only when source changes
+engine: knitr
+pdf-engine: lualatex
+format:
+  html:
+    standalone: true
+    self-contained: true
+    toc: true
+    toc-location: left
+    grid:
+      margin-width: 350px
+    linkcolor: "green"
+    urlcolor: "#009900"
+lightbox: auto
+theme: sky
+  ####light: [sky, ../sky-add]
+  ####dark: darkly
+backgroundcolor: "#fffcf2"
+title-block-banner: "#f0f3f5"
+title-block-banner-color: "black"
+doi-title: "doi.org/10.1086/734780"
+callout-appearance: simple
+callout-icon: false
+link-citations: true
+reference-location: margin
+citation-location: margin
+#### To publish on github, we are placing html under /root/program/RamadanEstimationJDE_Tufte.html.
+#### cd c:/seiro/docs/personal/div/chat
+#### git init
+#### git config --global user.name "SeiroIto"
+#### Change folder status: https://stackoverflow.com/posts/76134516/timeline 
+#### git remote add origin https://github.com/SeiroIto/gchat.git  ## specify remote
+#### git branch -M main
+#### Close git once and start again. 
+#### Before running below, create .gitignore and place it in c:/seiro/docs/personal/div/chat
+#### .gitignore has following lines (=asking git to ignore data files)
+#### /Chat/mediafiles/
+#### /Chat/*.json
+#### git add c:/seiro/docs/personal/div/chat   ## this adds files to track
+#### Below may not be necessary if .gitignore works as intended. 
+#### Below tells git the files to untrack.
+#### git update-index --assume-unchanged c:/data/Ramadan/submit2024/docs/save/*.qs
+#### If wanting back to "being tracked":
+####   git update-index --no-assume-unchanged filename
+####   git rm --cached is “correct” when you want to be the only one who still has the file. 
+#### git update-index --assume-unchanged c:/data/Ramadan/submit2024/save/Feb29/
+#### git update-index --assume-unchanged c:/data/Ramadan/submit2024/save/*.rds
+#### git update-index --assume-unchanged c:/data/Ramadan/submit2024/save/*.prn
+#### git ls-tree -r main --name-only ## list all tracked files
+#### git commit -am "initial commit"
+#### git push -f origin main  ## push files to remote
+#### if error with push fatal: the remote end hung up unexpectedly, run below
+#### git config http.postBuffer 2000000000
+#### git push -f origin main  ## push files to remote
+---
+```{css CSS setting, echo=FALSE, results = "hide"}
+.SeiroBenign {
+  background-color: #FFEBCD;
+  padding: 0.5em; /*文字まわり（上下左右）の余白*/
+  /* border: 1px solid yellow; */
+  /* font-weight: bold; */
+}
+.SeiroLightWreen {
+  background-color: #D0F0C0; /* Tea green */
+  padding: 0.5em; /*文字まわり（上下左右）の余白*/
+  font-family: Noto S	ans;
+  /* border: 1px solid yellow; */
+  /* font-weight: bold; */
+}
+/* Define a margin before hX (header level X) element */
+h1  {
+  margin-top: 3ex;
+  margin-bottom: 3ex;
+  /* background: #c2edff; */ /*背景色*/
+  padding: 0.5em;/*文字まわり（上下左右）の余白*/
+}
+h2  {
+  margin-top: 2ex;
+  margin-bottom: 2ex;
+  padding: 0.5em;/*文字周りの余白*/
+  ####color: #010101;/*文字色*/
+  color: #87a5f2;
+  /* background: #eaf3ff; */ /*背景色*/
+  /* border-bottom: solid 3px #516ab6; */ /*下線*/
+}
+DBlue {
+  color: dodgerblue;
+}
+Blue {
+  color: blue;
+}
+Red {
+  color: red;
+}
+```
+
+
+```{=html}
+<style type="text/css">
+  body, td{
+  font-size: 16pt;
+}
+</style>
+<style>
+.flushright {
+   text-align: right;
+}
+</style>
+```
+
+ここで示すのは、グーグル・チャットで三穂と成朗が交わしたメッセージです
+
+::: {.flushright data-latex=""}
+:::
+
+## 日付
+
+* 1月19日(日)-1月24日(金): お父上転落事故
+* 2月07日(金): 三穂発熱
+* 2月13日(木): 三穂肺炎、3日通院点滴
+* 4月08日(火): 新座の父危篤、三穂が子どもを連れて駆けつける
+* 4月09日(水): 新座の父死去
+* 4月16日(水): 葬送式
+* 4月20日(日): 三穂誕生日一泊旅行[4月21日(月)22:00帰宅]
+* <Red>4月23日(水): 結果診察</Red>
+* <Blue>5月07日(水): 細胞診結果</Blue>
+* 5月29日(木): 血液内科予約
+* 6月03日(火): 血液内科PET検査
+* <Red>6月10日(火): PET検査結果診察</Red>
+* 6月20日(金): 検査入院(手術)前診察
+* 6月25日(水): 手術前診断
+* 6月27日(金): 乳腺内科診察
+* 7月17日(木): 乳腺内科検査
+* 8月05日(火): 乳腺内科手術
+* 8月12日(火): 水を抜く処置
+* <Blue>8月27日(水): 手術結果診察、悪性所見なし</Blue>
+
+
+## 1月19日(日)-1月24日(金): お父上転落事故
+
+:::{layout-ncol=2}
+![01](../screenshots/CaringMihoOnDadInjury-1_2025Jan23.jpg){width=80%}
+
+![02](../screenshots/CaringMihoOnDadInjury-2_2025Jan23.jpg){width=80%}
+
+![03](../screenshots/CaringMihoOnDadInjury-3_2025Jan23.jpg){width=80%}
+
+![04](../screenshots/CaringMihoOnDadInjury-4_2025Jan23.jpg){width=80%}
+
+![05](../screenshots/CaringMihoOnDadInjury-5_2025Jan23.jpg){width=80%}
+
+![06](../screenshots/CaringMihoOnDadInjury-6_2025Jan23.jpg){width=80%}
+
+![07](../screenshots/CaringMihoOnDadInjury-7_2025Jan23.jpg){width=80%}
+
+![08](../screenshots/CaringMihoOnDadInjury-8_2025Jan23.jpg){width=80%}
+
+![09](../screenshots/CaringMihoOnDadInjury-9_2025Jan23.jpg){width=80%}
+
+![10](../screenshots/CaringMihoOnDadInjury-10_2025Jan23.jpg){width=80%}
+
+![11](../screenshots/CaringMihoOnDadInjury-11_2025Jan23.jpg){width=80%}
+
+![12](../screenshots/CaringMihoOnDadInjury-12_2025Jan23.jpg){width=80%}
+
+![13](../screenshots/CaringMihoOnDadInjury-13_2025Jan23.jpg){width=80%}
+
+![14](../screenshots/CaringMihoOnDadInjury-14_2025Jan23.jpg){width=80%}
+
+![15](../screenshots/CaringMihoOnDadInjury-15_2025Jan23.jpg){width=80%}
+:::
+
+
+## 2月07日(金): 三穂発熱
+
+![](../screenshots/TakeCareOfFever_2025Feb07.jpg){width=80%}
+
+* 紗良ちゃんがカーペットに吐いてしまう
+* 一人だと紗良ちゃんを介抱するので手一杯
+* 三穂は白いカーペットが汚れるのをとても嫌がるので、早く手伝ってもらって汚れが染み込むのを防ごうと思い、焦って呼んだ「だって、汚れるの嫌がるの三穂でしょう?」
+* カーペットは風呂場で一人で水洗いした
+
+## 2月13日(木): 三穂肺炎、3日通院点滴
+
+:::{layout-ncol=2}
+![](../screenshots/TentekiTakeCare_2025Feb13.jpg){width=80%}
+
+![](../screenshots/AdditionalTestsHotelStay_2025Feb14.jpg){width=80%}
+:::
+
+## <Red>4月23日(水): 結果診察</Red>
+
+::: {.column-margin}
+![4月24日(木)](../screenshots/2025AprilCalendar.jpg){#fig-Apr24}
+:::
+
+![](../screenshots/IMisunderstoodMihoResultDateBy1DayMihoGoesOutHeartBroken_2025Apr23.jpg)
+
+* 4月24日(木)(@fig-Apr24)がその日と誤解していました
+
+## 5月7日(水): 細胞診結果
+
+![](../screenshots/NegativeResultYes_2025May07.jpg){width=80%}
+
+
+## 5月29日(木): 血液内科予約
+
+![](../screenshots/GotTestAppointmentOnJune03_2025May29.jpg){width=80%}
+
+## <Red>6月10日(火): PET検査結果診察</Red>
+
+::: {.column-margin}
+![質問](../screenshots/FinishedTestsStayingHotelIAskResultDate1_2025June04.jpg)
+
+![叱責](../screenshots/MihoFuriousAboutMeNotAkingResults_2025June10.jpg)
+:::
+
+* 6月3日(火)の検査日翌日に結果日がいつかchatで尋ねました(05:14AM)
+* 三穂さんからchatでの回答はありませんでした
+   * おそらく口頭でのみ答えました
+* 6月10日(火)と誤解していました(09:08AM)
+
+## 6月20日(金): 検査入院(手術)前診察
+
+:::{layout-ncol=2}
+![](../screenshots/WantToGoToNextStLukesVisit_2025June18.jpg){width=80%}
+
+![](../screenshots/LetMeKnowOnChatNextDates_2025June20.jpg){width=80%}
+:::
+
+## 6月25日(木): 手術前診断
+
+![](../screenshots/HowWasTest_2025June25.jpg){width=80%}
+
+## 6月27日(金): 乳腺内科診察
+
+:::{layout-ncol=2}
+![](../screenshots/HowDidTestGoNoReply_2025June27.jpg){width=80%}
+
+![](../screenshots/SleptMorningTooTired_2025June28.jpg){width=80%}
+
+![](../screenshots/MihoGoesToLunchOneDayAfterExam_2025June28.jpg){width=80%}
+:::
+
+## 7月17日(木): 乳腺内科検査
+
+:::{layout-ncol=2}
+![](../screenshots/FinishedExamOperationOnAug05_2025July18.jpg){width=80%}
+
+![](../screenshots/CaringKidsMihoDinnerSaturdayAkikosan_2025July19.jpg){width=80%}
+:::
+
+
+## 8月05日(火): 乳腺内科手術
+
+:::{layout-ncol=2}
+![](../screenshots/OperationEnded1_2025Aug05.jpg){width=80%}
+
+![](../screenshots/OperationEnded2_2025Aug05.jpg){width=80%}
+:::
+
+## 8月12日(火): 水を抜く処置
+
+![](../screenshots/WhatTimeIsExamTomorrow_2025Aug12.jpg){width=80%}
+
+## <Blue>8月27日(水): 手術結果診察、悪性所見なし</Blue>
+
+![](../screenshots/WillGoToResultsTogetherNo_2025Aug25.jpg){width=80%}
+
+## 2025年6月、7月のカレンダー
+
+![6月夜間外出9回](../screenshots/2025JuneCalendar.jpg){width=80%}
+
+* 仕事4、交流2、その他3
+
+![7月夜間外出5回](../screenshots/2025JulyCalendar.jpg){width=80%}
+
+* 仕事1、交流2、その他2
+
+その他の月は記録せず
+
