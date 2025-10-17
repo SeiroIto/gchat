@@ -1,0 +1,9 @@
+#### This is gitignore for gchat
+#### /source/mediafiles/*.jpg
+#### /source/mediafiles/*.webp
+#### /source/mediafiles/*.mp4
+#### /source/mediafiles/*.pdf
+#### /source/mediafiles/*.m4a
+#### /source/*.json
+#### /source/*.tgz
+/source/
